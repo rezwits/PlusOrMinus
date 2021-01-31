@@ -8,7 +8,7 @@
 import Numerics
 
 infix operator ± : RangeFormationPrecedence
-func ± <NumberType: Real>(_ a: NumberType,
+public func ± <NumberType: Real>(_ a: NumberType,
                             _ b: NumberType) -> ClosedRange<NumberType> {
 
     if b > 0 {
@@ -25,7 +25,7 @@ func ± <NumberType: Real>(_ a: NumberType,
 }
 
 infix operator ±< : RangeFormationPrecedence
-func ±< <NumberType: Real>(_ a: NumberType,
+public func ±< <NumberType: Real>(_ a: NumberType,
                             _ b: NumberType) -> Range<NumberType> {
     
     if b > 0 {
